@@ -8,7 +8,7 @@ npm install
 \`\`\`
 
 ## הרצה
-כדי להשתמש בספרייה:
+ כדי להשתמש בספרייה: שימי לב
 \`\`\`javascript
 const { foo } = require('./src/index.js');
 console.log(foo('World'));
