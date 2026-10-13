@@ -5,13 +5,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('signupForm');
    
     // מאזינים לאירוע השליחה של הטופס
+    /**
+ * פונקציה לטיפול באירוע שליחת הטופס.
+ * מונעת את רענון הדף, שולפת את הנתונים מהשדות ומציגה הודעת הצלחה.
+ *
+ * @param {Event} event - אובייקט האירוע של שליחת הטופס
+ */
     form.addEventListener('submit', function(event) {
        
         // עוצרים את רענון הדף האוטומטי
         event.preventDefault();
        
         // לוקחים את הערכים שהמשתמש הזין
-        const nameValue = document.getElementById('fullName').value;
+        const nameValue = document.getElementById('name').value;
         const emailValue = document.getElementById('email').value;
        
         // מציגים הודעת הצלחה עם השם של המשתמש
